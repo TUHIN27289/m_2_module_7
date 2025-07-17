@@ -1,0 +1,21 @@
+.flex-drirection-container{
+    /* margin: 20px; */
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.flex-direction{
+    display: flex;
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+
+}
+.img-container img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width:576px){
+    .flex-direction{
+        flex-direction:column;
+    }
+}
