@@ -80,4 +80,33 @@ nav a{
 }
 .avi{
     border: 2px solid tomato;
+    align-items: center;
+    display: flex;
+}
+.avi-prac{
+    /* display: flex; */
+    align-items: center;
+}
+/* 7.5 */
+.cal-container{
+    display: grid;
+    grid-template-columns:repeat(7,1fr) ;
+    grid-template-rows: 30px repeat(6,40px);
+    row-gap: 20px;
+    column-gap: 10px;
+}
+.Date, .day{
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* height: 40px; */
+    
+}
+
+.day{
+    background-color: aquamarine;
+    /* height: 30px; */
+    font-size: 1.5em;
 }
