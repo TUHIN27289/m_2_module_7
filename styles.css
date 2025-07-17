@@ -110,3 +110,25 @@ nav a{
     /* height: 30px; */
     font-size: 1.5em;
 }
+
+/* 7.6 */
+.Basic-Responsiveness{
+    display: grid;
+    /* display: flex; */
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.avi-responsive{
+    border: 2px solid black;
+    padding: 20px;
+}
+.avi-responsive img{
+    width: 100%;
+}
+
+@media screen and (max-width: 576px)  {
+    .Basic-Responsiveness{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
