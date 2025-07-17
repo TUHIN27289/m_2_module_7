@@ -132,3 +132,51 @@ nav a{
     }
     
 }
+/* 7.7 */
+.media-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.media-item{
+    border: 2px solid black;
+    /* padding: 10px; */
+    
+}
+.media-item img{
+    width: 100%;
+}
+
+/* small size */
+@media screen and (max-width:576px) {
+    .media-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .media-item{
+        background-color: aquamarine;
+    }
+}
+/* medium size */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .media-container{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .media-item{
+        background-color: blueviolet;
+    }
+    
+}
+/* large size */
+@media screen and (min-width:992px) and (max-width:1200px){
+    .media-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .media-item{
+        background-color: darkolivegreen;
+    }
+    
+}
