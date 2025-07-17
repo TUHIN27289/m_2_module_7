@@ -180,3 +180,24 @@ nav a{
     }
     
 }
+
+/* 7.8 */
+.flex-drirection-container{
+    /* margin: 20px; */
+    max-width: 1170px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.flex-direction{
+    display: flex;
+}
+.img-container img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px){
+    .flex-direction{
+        flex-direction: column;
+    }
+    
+}
